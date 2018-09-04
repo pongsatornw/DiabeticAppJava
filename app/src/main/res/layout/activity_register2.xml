@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <!--android:background="@drawable/gradient"-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_register2_fname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText"
+            app:counterTextAppearance="@style/CounterText"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/activity_register2_lname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/activity_register2_fname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fname"
+                android:nextFocusForward="@+id/activity_register2_lname_edittext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_register2_lname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/activity_register2_fname"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/activity_register2_birthdate"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/activity_register2_lname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lname"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_register2_birthdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/activity_register2_lname"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/activity_register2_gender"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/activity_register2_birthdate_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/birthdate"
+                android:focusable="false"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_register2_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/activity_register2_birthdate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/activity_register2_button"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/activity_register2_gender_autocompletetextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/gender"
+                android:focusable="false"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/activity_register2_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:layout_constraintTop_toBottomOf="@+id/activity_register2_gender"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_register2_fname"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

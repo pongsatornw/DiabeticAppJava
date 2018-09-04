@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/settingtb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:padding="10dp"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle">
+
+            <!-- PersonalProfile -->
+
+            <TextView
+                android:id="@+id/Personal_Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_profile"
+                android:textAlignment="textStart"
+                android:textSize="21sp"
+                android:paddingTop="10sp"/>
+
+            <LinearLayout
+                android:id="@+id/settinglo_fname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_fname_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:paddingLeft="10sp"
+                    android:text="@string/fname"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_lname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_lname_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10sp"
+                    android:text="@string/lname"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_birthdate_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/birthdate"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/settingtv_birthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_gender_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/gender"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_tel_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/tel"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Caretaker Profile -->
+            <TextView
+                android:id="@+id/Caretaker_Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_weight="25"
+                android:text="@string/c_profile"
+                android:textAlignment="textStart"
+                android:textSize="21sp"
+                android:paddingTop="20sp" />
+
+            <LinearLayout
+                android:id="@+id/settinglo_c_fname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_c_fname_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/c_fname"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_c_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_c_lname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_c_lname_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/c_lname"
+                    android:textSize="18sp"
+                    tools:text="@string/c_lname" />
+
+                <TextView
+                    android:id="@+id/settingtv_c_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_c_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_c_email_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/c_email"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_c_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settinglo_c_tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/settingtv_c_tel_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp"
+                    android:text="@string/c_tel"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/settingtv_c_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/no_value"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_weight="25"
+                android:paddingTop="20sp"
+                android:text="Notify Setting"
+                android:textAlignment="textStart"
+                android:textSize="21sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify via Email" />
+
+                <Switch
+                    android:id="@+id/seekBar1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify via SMS" />
+
+                <Switch
+                    android:id="@+id/seekBar2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify every Blood Glucose measured" />
+
+                <Switch
+                    android:id="@+id/seekBar3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify when Blood Glucose is hyperglycemia" />
+
+                <Switch
+                    android:id="@+id/seekBar4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify when Blood Glucose is high" />
+
+                <Switch
+                    android:id="@+id/seekBar5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify when Blood Glucose is low" />
+
+                <Switch
+                    android:id="@+id/seekBar6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Notify when Blood Glucose is hypoglycemia" />
+
+                <Switch
+                    android:id="@+id/seekBar7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

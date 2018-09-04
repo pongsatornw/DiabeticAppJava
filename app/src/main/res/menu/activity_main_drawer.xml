@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Main Page" />
+        <item
+            android:id="@+id/nav_bg"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Add Blood glucose" />
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Reminder" />
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Insert data to Server" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="History" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Notify Setting" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

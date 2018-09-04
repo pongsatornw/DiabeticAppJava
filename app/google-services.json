@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "1005606120140",
+    "firebase_url": "https://fir-signin-18921.firebaseio.com",
+    "project_id": "fir-signin-18921",
+    "storage_bucket": "fir-signin-18921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005606120140:android:f8a0498f61da91d3",
+        "android_client_info": {
+          "package_name": "com.example.yggdrasil.diabeticapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005606120140-74serqde5bu83qu15jtsb93q4vqbqnof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yggdrasil.diabeticapplication",
+            "certificate_hash": "307fca62d1142112aaa1f51516cbb0122e2b8629"
+          }
+        },
+        {
+          "client_id": "1005606120140-45m7cu5givbeja137d9cgsdf62848a2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXxvw0jVT__4ZhMHgfxsOuhHxIdlMYca4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005606120140-45m7cu5givbeja137d9cgsdf62848a2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005606120140:android:d0d87eeb2c98690d",
+        "android_client_info": {
+          "package_name": "com.example.yggdrasil.firebasesignin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005606120140-7ssk6oi7dbns65nmracvk06fjf8kkl34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yggdrasil.firebasesignin",
+            "certificate_hash": "307fca62d1142112aaa1f51516cbb0122e2b8629"
+          }
+        },
+        {
+          "client_id": "1005606120140-45m7cu5givbeja137d9cgsdf62848a2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXxvw0jVT__4ZhMHgfxsOuhHxIdlMYca4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005606120140-45m7cu5givbeja137d9cgsdf62848a2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005606120140:android:399a8b7f20c26bf3",
+        "android_client_info": {
+          "package_name": "com.example.yggdrasil.realdiabeticapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005606120140-fgjs8jtpc8pj4d9dc5n1pu5hju02qpmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yggdrasil.realdiabeticapp",
+            "certificate_hash": "307fca62d1142112aaa1f51516cbb0122e2b8629"
+          }
+        },
+        {
+          "client_id": "1005606120140-45m7cu5givbeja137d9cgsdf62848a2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXxvw0jVT__4ZhMHgfxsOuhHxIdlMYca4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005606120140-45m7cu5givbeja137d9cgsdf62848a2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
